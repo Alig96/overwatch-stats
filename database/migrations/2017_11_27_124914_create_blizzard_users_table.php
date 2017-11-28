@@ -20,8 +20,9 @@ class CreateBlizzardUsersTable extends Migration
             $table->string('battletag');
             $table->enum('region', ['eu', 'us', 'kr']);
             //User Data
-            $table->text('quickplay');
-            $table->text('competitive');
+            $table->text('overall_stats');
+            $table->longText('heroes_stats');
+            $table->text('heroes_playtime');
 
             $table->timestamps();
         });

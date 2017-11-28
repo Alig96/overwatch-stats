@@ -91,8 +91,9 @@ class UserController extends Controller
         $overwatchRegionData = $overwatchMassData[$region];
 
         //Update the database with the user data.
-        $user->quickplay = json_encode($overwatchRegionData['stats']['quickplay']);
-        $user->competitive = json_encode($overwatchRegionData['stats']['competitive']);
+        $user->overall_stats = $overwatchRegionData['stats'];
+        $user->heroes_stats = $overwatchRegionData['heroes']['stats'];
+        $user->heroes_playtime = $overwatchRegionData['heroes']['playtime'];
 
         //Save the user changes
         $user->updated_at = Carbon::now();

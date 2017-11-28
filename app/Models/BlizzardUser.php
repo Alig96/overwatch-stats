@@ -9,11 +9,13 @@ class BlizzardUser extends Model
     protected $fillable = [
         'region',
         'battletag',
-        'quickplay',
-        'competitive'
+        'overall_stats',
+        'heroes_stats',
+        'heroes_playtime'
     ];
     protected $casts = [
-        'quickplay' => 'array',
-        'competitive' => 'array'
+        'overall_stats' => 'array',
+        'heroes_stats' => 'array',
+        'heroes_playtime' => 'array'
     ];
 }
