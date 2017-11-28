@@ -48,7 +48,12 @@ class UserController extends Controller
         $user = BlizzardUser::where([
             ['region', '=', $region],
             ['battletag', '=', $blizzardUser]
-        ])->firstOrFail();
+        ])->first();
+
+        if($user == null){
+            //If we don't have the user then lets inform the user to update
+            return "Profile not found, try updating.";
+        }
 
         //Return a view with the Blizzard User Data
         return $user;
