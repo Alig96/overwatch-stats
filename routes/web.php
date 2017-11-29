@@ -15,5 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/user/', 'UserController@index')->name('user.index');
 Route::get('/user/{region}/{user}', 'UserController@show')->name('user.show');
 Route::get('/user/{region}/{user}/update', 'UserController@update')->name('user.update');

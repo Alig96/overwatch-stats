@@ -19,7 +19,6 @@ class UserController extends Controller
     /**
      * Instantiate a new controller instance.
      *
-     * @return void
      */
     public function __construct()
     {
@@ -33,14 +32,21 @@ class UserController extends Controller
      */
     public function index()
     {
-        //Maybe show a directory of all users we have in the database.
+        //Get all users and paginate
+        $users = BlizzardUser::paginate(15);
+
+        dd($users);
+
+        //return view('user.index', ['users' => $users]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param $region
+     * @param $blizzardUser
      * @return \Illuminate\Http\Response
+     * @internal param int $id
      */
     public function show($region, $blizzardUser)
     {
@@ -55,6 +61,8 @@ class UserController extends Controller
             return "Profile not found, try updating.";
         }
 
+        dd($user);
+
         //Return a view with the Blizzard User Data
         return $user;
     }
@@ -62,9 +70,11 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param $region
+     * @param $blizzardUser
      * @return \Illuminate\Http\Response
+     * @internal param int $id
      */
     public function update(Request $request, $region, $blizzardUser)
     {
