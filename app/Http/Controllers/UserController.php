@@ -61,10 +61,8 @@ class UserController extends Controller
             return "Profile not found, try updating.";
         }
 
-        dd($user);
-
         //Return a view with the Blizzard User Data
-        return $user;
+        return view('user.show', ['user' => $user]);
     }
 
     /**
