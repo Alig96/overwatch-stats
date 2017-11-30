@@ -58,7 +58,7 @@ class UserController extends Controller
 
         if($user == null){
             //If we don't have the user then lets inform the user to update
-            return "Profile not found, try updating.";
+            return view('user.404', ['region' => $region, 'battletag' => $blizzardUser]);
         }
 
         //Return a view with the Blizzard User Data

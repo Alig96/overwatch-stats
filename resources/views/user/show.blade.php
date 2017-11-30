@@ -96,10 +96,10 @@
                         <div class="card-body-icon">
                             <i class="fa fa-trophy"></i>
                         </div>
-                        <div class="mr-5">Most Played Hero</div>
+                        <div class="mr-5">Competitive Rank</div>
                     </div>
                     <a class="card-footer text-white clearfix small z-1" href="#">
-                        <span class="float-left">"playtime_competitive"</span>
+                        <span class="float-left">{{ $user->overall_stats['competitive']['overall_stats']['comprank'] }}</span>
                         <span class="float-right">
               </span>
                     </a>
@@ -193,7 +193,10 @@
                     </table>
                 </div>
             </div>
-            <div class="card-footer small text-muted">Updated: {{ \Carbon\Carbon::createFromTimeStamp(strtotime($user->updated_at))->diffForHumans() }}</div>
+            <div class="card-footer small text-muted">
+                Updated: {{ \Carbon\Carbon::createFromTimeStamp(strtotime($user->updated_at))->diffForHumans() }}
+                <a type="button" class="btn btn-primary" href="{{ route('user.update', ['region' => $user->region, 'battletag' => $user->battletag]) }}">Update Stats</a>
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-8">
