@@ -178,212 +178,22 @@
                         </tr>
                         </tfoot>
                         <tbody>
-                        <tr>
-                            <td>Ana</td>
-                            <td>{{ $user->heroes_playtime['competitive']['ana'] }}</td>
-                            <td>{{ $user->heroes_stats['competitive']['ana']['general_stats']['eliminations_most_in_game'] }}</td>
-                            <td>{{ $user->heroes_stats['competitive']['ana']['general_stats']['eliminations_most_in_life'] }}</td>
-                            <td>{{ $user->heroes_stats['competitive']['ana']['general_stats']['hero_damage_done_most_in_game'] }}</td>
-                            <td>{{ $user->heroes_stats['competitive']['ana']['general_stats']['medals_gold'] }}</td>
-                        </tr>
-                        <tr>
-                            <td>Bastion</td>
-                            <td>"competitive_bastion_time_played"</td>
-                            <td>"competitive_bastion_eliminations_most_in_game"</td>
-                            <td>"competitive_bastion_eliminations_most_in_life"</td>
-                            <td>"competitive_bastion_all_damage_done_most_in_game"</td>
-                            <td>"competitive_bastion_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>D.Va</td>
-                            <td>"competitive_dva_time_played"</td>
-                            <td>"competitive_dva_eliminations_most_in_game"</td>
-                            <td>"competitive_dva_eliminations_most_in_life"</td>
-                            <td>"competitive_dva_all_damage_done_most_in_game"</td>
-                            <td>"competitive_dva_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Doomfist</td>
-                            <td>"competitive_doomfist_time_played"</td>
-                            <td>"competitive_doomfist_eliminations_most_in_game"</td>
-                            <td>"competitive_doomfist_eliminations_most_in_life"</td>
-                            <td>"competitive_doomfist_all_damage_done_most_in_game"</td>
-                            <td>"competitive_doomfist_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Genji</td>
-                            <td>"competitive_genji_time_played"</td>
-                            <td>"competitive_genji_eliminations_most_in_game"</td>
-                            <td>"competitive_genji_eliminations_most_in_life"</td>
-                            <td>"competitive_genji_all_damage_done_most_in_game"</td>
-                            <td>"competitive_genji_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Hanzo</td>
-                            <td>"competitive_hanzo_time_played"</td>
-                            <td>"competitive_hanzo_eliminations_most_in_game"</td>
-                            <td>"competitive_hanzo_eliminations_most_in_life"</td>
-                            <td>"competitive_hanzo_all_damage_done_most_in_game"</td>
-                            <td>"competitive_hanzo_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Junkrat</td>
-                            <td>"competitive_junkrat_time_played"</td>
-                            <td>"competitive_junkrat_eliminations_most_in_game"</td>
-                            <td>"competitive_junkrat_eliminations_most_in_life"</td>
-                            <td>"competitive_junkrat_all_damage_done_most_in_game"</td>
-                            <td>"competitive_junkrat_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Lucio</td>
-                            <td>"competitive_lucio_time_played"</td>
-                            <td>"competitive_lucio_eliminations_most_in_game"</td>
-                            <td>"competitive_lucio_eliminations_most_in_life"</td>
-                            <td>"competitive_lucio_all_damage_done_most_in_game"</td>
-                            <td>"competitive_lucio_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Mccree</td>
-                            <td>"competitive_mccree_time_played"</td>
-                            <td>"competitive_mccree_eliminations_most_in_game"</td>
-                            <td>"competitive_mccree_eliminations_most_in_life"</td>
-                            <td>"competitive_mccree_all_damage_done_most_in_game"</td>
-                            <td>"competitive_mccree_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Mei</td>
-                            <td>"competitive_mei_time_played"</td>
-                            <td>"competitive_mei_eliminations_most_in_game"</td>
-                            <td>"competitive_mei_eliminations_most_in_life"</td>
-                            <td>"competitive_mei_all_damage_done_most_in_game"</td>
-                            <td>"competitive_mei_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Mercy</td>
-                            <td>"competitive_mercy_time_played"</td>
-                            <td>"competitive_mercy_eliminations_most_in_game"</td>
-                            <td>"competitive_mercy_eliminations_most_in_life"</td>
-                            <td>"competitive_mercy_all_damage_done_most_in_game"</td>
-                            <td>"competitive_mercy_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Orisa</td>
-                            <td>"competitive_orisa_time_played"</td>
-                            <td>"competitive_orisa_eliminations_most_in_game"</td>
-                            <td>"competitive_orisa_eliminations_most_in_life"</td>
-                            <td>"competitive_orisa_all_damage_done_most_in_game"</td>
-                            <td>"competitive_orisa_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Pharah</td>
-                            <td>"competitive_pharah_time_played"</td>
-                            <td>"competitive_pharah_eliminations_most_in_game"</td>
-                            <td>"competitive_pharah_eliminations_most_in_life"</td>
-                            <td>"competitive_pharah_all_damage_done_most_in_game"</td>
-                            <td>"competitive_pharah_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Reaper</td>
-                            <td>"competitive_reaper_time_played"</td>
-                            <td>"competitive_reaper_eliminations_most_in_game"</td>
-                            <td>"competitive_reaper_eliminations_most_in_life"</td>
-                            <td>"competitive_reaper_all_damage_done_most_in_game"</td>
-                            <td>"competitive_reaper_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Reinhardt</td>
-                            <td>"competitive_reinhardt_time_played"</td>
-                            <td>"competitive_reinhardt_eliminations_most_in_game"</td>
-                            <td>"competitive_reinhardt_eliminations_most_in_life"</td>
-                            <td>"competitive_reinhardt_all_damage_done_most_in_game"</td>
-                            <td>"competitive_reinhardt_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Roadhog</td>
-                            <td>"competitive_roadhog_time_played"</td>
-                            <td>"competitive_roadhog_eliminations_most_in_game"</td>
-                            <td>"competitive_roadhog_eliminations_most_in_life"</td>
-                            <td>"competitive_roadhog_all_damage_done_most_in_game"</td>
-                            <td>"competitive_roadhog_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Soldier:76</td>
-                            <td>"competitive_soldier76_time_played"</td>
-                            <td>"competitive_soldier76_eliminations_most_in_game"</td>
-                            <td>"competitive_soldier76_eliminations_most_in_life"</td>
-                            <td>"competitive_soldier76_all_damage_done_most_in_game"</td>
-                            <td>"competitive_soldier76_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Sombra</td>
-                            <td>"competitive_sombra_time_played"</td>
-                            <td>"competitive_sombra_eliminations_most_in_game"</td>
-                            <td>"competitive_sombra_eliminations_most_in_life"</td>
-                            <td>"competitive_sombra_all_damage_done_most_in_game"</td>
-                            <td>"competitive_sombra_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Symmetra</td>
-                            <td>"competitive_symmetra_time_played"</td>
-                            <td>"competitive_symmetra_eliminations_most_in_game"</td>
-                            <td>"competitive_symmetra_eliminations_most_in_life"</td>
-                            <td>"competitive_symmetra_all_damage_done_most_in_game"</td>
-                            <td>"competitive_symmetra_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Torbjorn</td>
-                            <td>"competitive_torbjorn_time_played"</td>
-                            <td>"competitive_torbjorn_eliminations_most_in_game"</td>
-                            <td>"competitive_torbjorn_eliminations_most_in_life"</td>
-                            <td>"competitive_torbjorn_all_damage_done_most_in_game"</td>
-                            <td>"competitive_torbjorn_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Tracer</td>
-                            <td>"competitive_tracer_time_played"</td>
-                            <td>"competitive_tracer_eliminations_most_in_game"</td>
-                            <td>"competitive_tracer_eliminations_most_in_life"</td>
-                            <td>"competitive_tracer_all_damage_done_most_in_game"</td>
-                            <td>"competitive_tracer_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Widowmaker</td>
-                            <td>"competitive_widowmaker_time_played"</td>
-                            <td>"competitive_widowmaker_eliminations_most_in_game"</td>
-                            <td>"competitive_widowmaker_eliminations_most_in_life"</td>
-                            <td>"competitive_widowmaker_all_damage_done_most_in_game"</td>
-                            <td>"competitive_widowmaker_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Winston</td>
-                            <td>"competitive_winston_time_played"</td>
-                            <td>"competitive_winston_eliminations_most_in_game"</td>
-                            <td>"competitive_winston_eliminations_most_in_life"</td>
-                            <td>"competitive_winston_all_damage_done_most_in_game"</td>
-                            <td>"competitive_winston_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Zarya</td>
-                            <td>"competitive_zarya_time_played"</td>
-                            <td>"competitive_zarya_eliminations_most_in_game"</td>
-                            <td>"competitive_zarya_eliminations_most_in_life"</td>
-                            <td>"competitive_zarya_all_damage_done_most_in_game"</td>
-                            <td>"competitive_zarya_medals_gold"</td>
-                        </tr>
-                        <tr>
-                            <td>Zenyatta</td>
-                            <td>"competitive_zenyatta_time_played"</td>
-                            <td>"competitive_zenyatta_eliminations_most_in_game"</td>
-                            <td>"competitive_zenyatta_eliminations_most_in_life"</td>
-                            <td>"competitive_zenyatta_all_damage_done_most_in_game"</td>
-                            <td>"competitive_zenyatta_medals_gold"</td>
-                        </tr>
-
+                        <!-- Loop through the stats to get the hero key so we can loop through each stat we want for a hero -->
+                        @foreach ($user->heroes_stats['competitive'] as $hero => $data)
+                            <tr>
+                                <td>{{ $hero }}</td>
+                                <td>{{ $user->heroes_playtime['competitive'][$hero] }}</td>
+                                <td>{{ empty($user->heroes_stats['competitive'][$hero]['general_stats']['eliminations_most_in_game'])? 0:$user->heroes_stats['competitive'][$hero]['general_stats']['eliminations_most_in_game'] }}</td>
+                                <td>{{ empty($user->heroes_stats['competitive'][$hero]['general_stats']['eliminations_most_in_life'])? 0:$user->heroes_stats['competitive'][$hero]['general_stats']['eliminations_most_in_life'] }}</td>
+                                <td>{{ empty($user->heroes_stats['competitive'][$hero]['general_stats']['hero_damage_done_most_in_game'])? 0:$user->heroes_stats['competitive'][$hero]['general_stats']['hero_damage_done_most_in_game'] }}</td>
+                                <td>{{ empty($user->heroes_stats['competitive'][$hero]['general_stats']['medals_gold'])? 0:$user->heroes_stats['competitive'][$hero]['general_stats']['medals_gold'] }}</td>
+                            </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+            <div class="card-footer small text-muted">Updated: {{ \Carbon\Carbon::createFromTimeStamp(strtotime($user->updated_at))->diffForHumans() }}</div>
         </div>
         <div class="row">
             <div class="col-lg-8">
@@ -393,9 +203,8 @@
                         <div class="card-header">
                             <i class="fa fa-pie-chart"></i> Stats</div>
                         <div class="card-body">
-                            <canvas id="myPieChart" width="100%" height="100"></canvas>
+                            <div id="chart_div"></div>
                         </div>
-                        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                     </div>
                 </div>
             </div>
@@ -403,35 +212,11 @@
         </div>
         <!-- /.container-fluid-->
         <!-- /.content-wrapper-->
-        <footer class="sticky-footer">
-            <div class="container">
-                <div class="text-center">
-                    <small>Copyright © Your Website 2017</small>
-                </div>
-            </div>
-        </footer>
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top">
             <i class="fa fa-angle-up"></i>
         </a>
-        <!-- Logout Modal-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- Bootstrap core JavaScript-->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -446,6 +231,43 @@
         <!-- Custom scripts for this page-->
         <script src="js/sb-admin-datatables.min.js"></script>
         <script src="js/sb-admin-charts.min.js"></script>
+
+        <!--Load the AJAX API-->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+
+            // Load the Visualization API and the corechart package.
+            google.charts.load('current', {'packages':['corechart']});
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            google.charts.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart() {
+
+                // Create the data table.
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Hero');
+                data.addColumn('number', 'Times Played (Hours)');
+                data.addRows([
+                    //Loop through each hero's play time
+                    @foreach ($user->heroes_playtime['competitive'] as $hero => $time)
+                        ['{{ $hero }}', {{ $time }}],
+                    @endforeach
+                ]);
+
+                // Set chart options
+                var options = {'title':'Heros Played',
+                    'width':500,
+                    'height':400};
+
+                // Instantiate and draw our chart, passing in some options.
+                var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }
+        </script>
     </div>
 </body>
 
