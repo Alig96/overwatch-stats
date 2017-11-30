@@ -34,19 +34,38 @@
                 <h1 class="mb-5">Search For Your Overwatch Stats</h1>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                <form>
+                <form id="search-form" onsubmit="return false;">
                     <div class="form-row">
-                        <div class="col-12 col-md-9 mb-2 mb-md-0">
-                            <input class="form-control form-control-lg" placeholder="Enter Your Battle Tag (#)" required    type="username">
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <input class="form-control form-control-lg" placeholder="Enter Your Battle Tag (#)" required type="username">
                         </div>
-                        <div class="col-12 col-md-3">
-                            <button class="btn btn-block btn-lg btn-primary" href="/user/" type="submit">Search</button>
+                        <div class="col-12 col-md-2">
+                            <select id="leadType" class="custom-select" name="region" required>
+                                <option value="eu">Europe</option>
+                                <option value="na">North America</option>
+                                <option value="kr">Korea</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <button class="btn btn-block btn-lg btn-primary" type="submit" onclick="createOverwatchURL()">Search</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script>
+        function createOverwatchURL() {
+            var x = document.getElementById("search-form");
+            var username = x.elements[0].value;
+            var region = x.elements[1].value;
+
+            //If the Username Contains a hash change it to a dash
+            username = username.replace("#", "-");
+
+            window.location.href = '/user/' + region + '/' + username + '/';
+        }
+    </script>
 </header>
 </body>
 </html>
